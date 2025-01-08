@@ -1,5 +1,3 @@
-// eslint.config.mjs (or .js)
-import { createConfig } from 'eslint';
 
 export default [
   {
