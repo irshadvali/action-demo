@@ -1,3 +1,5 @@
+import reactPlugin from 'eslint-plugin-react';
+
 export default [
   {
     files: ['**/*.{js,jsx,ts,tsx}'],
@@ -9,7 +11,7 @@ export default [
       },
     },
     plugins: {
-      react: require('eslint-plugin-react'),
+      react: reactPlugin,
     },
     rules: {
       'react/jsx-uses-react': 'off', // For React 17+
