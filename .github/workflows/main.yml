@@ -52,6 +52,10 @@ jobs:
         run: |
           echo "Listing contents of ./build after build:"
           ls -la ./build
+        shell: /usr/bin/bash -e {0}
+        env:
+          CI: false
+          NODE_OPTIONS: --openssl-legacy-provider
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
