@@ -1,6 +1,8 @@
 export default {
-  extends: ['eslint:recommended'],
+  // ...other config
+  extends: "eslint:recommended",
   rules: {
-    'no-console': 'warn',
+      semi: ["warn", "always"]
   },
+  // ...other config
 };
