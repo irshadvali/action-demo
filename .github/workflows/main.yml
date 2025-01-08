@@ -33,6 +33,10 @@ jobs:
         run: npm ci 
       - name: Run ESLint
         run: npx eslint "**/*.{js,jsx,ts,tsx}" 
+        shell: /usr/bin/bash -e {0}
+        env:
+          CI: false
+          NODE_OPTIONS: --openssl-legacy-provider
       - name: Build project
         run: npm run build
 
