@@ -3,13 +3,13 @@ import reactPlugin from 'eslint-plugin-react';
 export default [
   {
     files: ['**/*.{js,jsx,ts,tsx}'],
-    languageOptions: {
-      ecmaVersion: 2021,
-      sourceType: 'module',
-      ecmaFeatures: {
-        jsx: true, // Enable JSX syntax
-      },
-    },
+    // languageOptions: {
+    //   ecmaVersion: 2021,
+    //   sourceType: 'module',
+    //   ecmaFeatures: {
+    //     jsx: true, // Enable JSX syntax
+    //   },
+    // },
     plugins: {
       react: reactPlugin,
     },
