@@ -32,7 +32,7 @@ jobs:
       - name: Install Dependencies
         run: npm ci 
       - name: Run ESLint
-        run: npx eslint . # No --ext flag needed
+        run: npx eslint "**/*.{js,jsx,ts,tsx}" 
       - name: Build project
         run: npm run build
 
