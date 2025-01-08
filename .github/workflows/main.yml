@@ -18,7 +18,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # Step 2: Setup Node.js environment
+      # Step 2: Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -26,11 +26,11 @@ jobs:
 
       # Step 3: Install dependencies
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
-      # Step 4: Debug workspace files (Optional for troubleshooting)
-      #- name: Debug: List workspace files
-      #  run: ls -la
+      # # Step 4: Debug workspace files (Optional for troubleshooting)
+      # - name: Debug: List workspace files
+      #   run: ls -la
 
       # Step 5: Build the project
       - name: Build project
