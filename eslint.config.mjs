@@ -1,9 +1,9 @@
-module.exports = {
+export default {
   overrides: [
     {
-      files: ['*.js', '*.jsx', '*.ts', '*.tsx'], // Specify the file types directly in the config
+      files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
       rules: {
-        // your rules here
+        // your ESLint rules here
       },
     },
   ],
