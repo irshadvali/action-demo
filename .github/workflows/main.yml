@@ -48,16 +48,20 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
+      - name: Check build directory after build
+        run: |
+          echo "Listing contents of ./build after build:"
+          ls -la ./build
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
           name: production-files
           path: ./build
 
-      - name: Check build directory
-        run: |
-            echo "Listing contents of ./build:"
-            ls -la ./build
+      # - name: Check build directory
+      #   run: |
+      #       echo "Listing contents of ./build:"
+      #       ls -la ./build
   
   
       - name: Deploy to GitHub Pages
