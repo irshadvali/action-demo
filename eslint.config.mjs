@@ -1,9 +1,15 @@
+// eslint.config.mjs
 export default {
   overrides: [
     {
-      files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
+      files: ['**/*.ts', '**/*.tsx'],
       rules: {
-        // your ESLint rules here
+        '@typescript-eslint/explicit-module-boundary-types': 'warn',
+      },
+    },
+    {
+      files: ['**/*.js', '**/*.jsx'],
+      rules: {
         'no-console': 'warn',
       },
     },
