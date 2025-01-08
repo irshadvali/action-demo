@@ -29,8 +29,8 @@ jobs:
         run: npm ci
 
       # Step 4: Debug workspace files (Optional for troubleshooting)
-      - name: Debug: List workspace files
-        run: ls -la
+      #- name: Debug: List workspace files
+      #  run: ls -la
 
       # Step 5: Build the project
       - name: Build project
