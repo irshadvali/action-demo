@@ -54,8 +54,11 @@ jobs:
           name: production-files
           path: ./build
 
-      - name: Check directory after downloading
-        run: ls -la ./build  # Verify that the artifact has been downloaded correctly
+      - name: Check build directory
+        run: |
+            echo "Listing contents of ./build:"
+            ls -la ./build
+  
   
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
