@@ -50,14 +50,18 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
-      # Step 1: Download build artifacts
+      # Step 1: Checkout the repository
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # Step 2: Download build artifacts
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
           name: production-files
           path: ./build
 
-      # Step 2: Deploy to GitHub Pages
+      # Step 3: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
