@@ -1,5 +1,6 @@
 // eslint.config.mjs
-import { defineConfig } from 'eslint';
+import pkg from 'eslint'; // Default import for CommonJS modules
+const { defineConfig } = pkg;
 
 export default defineConfig([
   {
