@@ -24,6 +24,7 @@ export default [
         'error',
         { allow: ['error', 'log', 'debug', 'trace', 'group', 'groupEnd', 'table'] },
       ],
+      'quotes': ['error', 'single', { 'avoidEscape': true, 'allowTemplateLiterals': true }],
     },
   },
 ];
