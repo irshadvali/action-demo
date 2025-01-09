@@ -69,3 +69,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # action-demo
+# Action 
+
+npm install --save-dev eslint eslint-plugin-react @babel/eslint-parser @babel/preset-react
+npx eslint "**/*.{js,jsx,ts,tsx}" --fix
+
+
+npm install --save-dev @babel/eslint-parser @babel/preset-react
+
