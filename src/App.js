@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   const sayHello = () => {
-    
+   console.log("kkkk");
     alert("Hello!")
   };
   return (
