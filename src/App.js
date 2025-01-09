@@ -4,6 +4,7 @@ import './App.css';
 function App() {
   const sayHello = () => {
    console.log("kkkk");
+   console.info("oo")
     alert("Hello!")
   };
   return (
