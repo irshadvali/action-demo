@@ -3,7 +3,7 @@ name: Build & Deploy
 on:
   push:
     branches:
-      - branchTest
+      - main
 
 env:
   CI: false
@@ -50,7 +50,7 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/branchTest'
+    if: github.ref == 'refs/heads/main'
 
     steps:
       - name: Download artifact
