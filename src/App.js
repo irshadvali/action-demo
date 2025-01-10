@@ -9,7 +9,7 @@ function App() {
   };
   return (
     <div>
-      <p>hi</p>
+      <p>Branch Test</p>
       <p>Irshad Vali</p>
       <button onClick={sayHello}>Say Hello</button>
     </div>
