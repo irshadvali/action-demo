@@ -11,7 +11,7 @@ function App() {
     <div>
       <p>Branch Test</p>
       <p>Irshad Vali</p>
-      <button onClick={sayHello}>Say Hello</button>
+      <button onClick={sayHello}>Say Hello!</button>
     </div>
   );
 }
